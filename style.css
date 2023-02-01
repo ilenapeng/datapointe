@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root {--main-color:#C09891;}
 /* C09891 BEA8A7 A26769*/
@@ -11,12 +11,11 @@ body * {
   -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  text-align:center;
+  font-family: 'Libre Baskerville', sans-serif;
   color: #000;
 }
 
-h1 {
+.intro h1 {
   color: var(--main-color);
   text-align: left;
   font-size: 3em;
@@ -25,13 +24,13 @@ h1 {
   margin:0
 }
 
-h2 {
+.intro h2 {
   font-size: 1.3em;
   text-align: left;
   font-weight:400;
 }
 
-p {
+.projects p {
   font-size: 1em;
   text-align: left;
   font-weight:300;
@@ -42,10 +41,10 @@ a.linktitle {
 a{text-decoration: none}
 span {font-family: 'Poiret One'; font-weight:300 ;}
 
-img {max-width: 100%;}
-img.vertical{
+.projects img {max-width: 100%;}
+.projects img.vertical{
   width:100%;
-  height:225px;
+  height:270px;
   object-fit: cover;
   object-position: top;}
 
