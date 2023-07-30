@@ -27,7 +27,7 @@ body * {
 .intro h2 {
   font-size: 1.3em;
   text-align: left;
-  font-weight:400;
+  font-weight:700;
 }
 
 .intro a{text-decoration: none}
@@ -53,6 +53,7 @@ span {font-family: 'Poiret One'; font-weight:300 ;}
 article {
   padding-left: 8rem;
   padding-right: 8rem;
+  line-height: 1.5;
 }
 
 .intro {max-width: 75%;}
