@@ -8,18 +8,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<style>
+  img{
+    max-width:70%; 
+    display: block; 
+    margin:0 auto; 
+    padding-bottom:5px
+  }
+
+  @media only screen and (max-width: 800px) {
+    img{max-width:100%}
+  }
+</style>
+
 <body>
 
 <article>
 <div class="intro">
   <a href="index.html"><h1><span>data</span>pointe</h1></a>
-  <h2>Choreographer George Balanchine’s ballets by duration, musical era & number of dancers</h2>
+  <h2>Choreographer George Balanchine’s Ballets</h2>
 </div>
 
-<br>
+<p><em>September 21, 2023</em> - In honor of New York City Ballet's 75th anniversary, I decided to revisit a chart of George Balanchine's ballets I had made back in January 2021 when I first began exploring data visualization. Balanchine, one of the most famed 20th century choreographers, pioneered American ballet: Balanchine and Lincoln Kirstein founded the School of American Ballet in 1934 and later, the New York City Ballet in 1948.</p>
+  
+<p>Balanchine, also known as Mr. B, created nearly 90 works in his lifetime. This visualization shows the year each ballet was created and what musical era it was choreographed to. The size of the dots gives a loose sense of how many dancers were in the ballet.</p>
 
+<img src="project-details/balanchine/balanchine.png">
+
+<p>I should note that these eras for composers are open to interpretation, as composers' sometimes worked through multiple eras and frequently used techniques from different periods. Also, impressionism and neoclassicism are considered a subset of modernism, but are noted separately in this visualization from other modernist music to show Balanchine's particular draw to these specific genres. Now, some thoughts:</p>
+<li>Balanchine clearly gravitated toward romantic and neoclassical era music.</li>
+<li>His first piece, Apollo, choreographed to music by Igor Stravinsky, was the start of a friendship and collaboration that resulted in 15 ballets - the most pieces Balanchine ever created on one composer's works.</li>
+<li>In a close second, Balanchine choreographed 14 ballets set to Tchaikovsky. This love too was established early on, when Balanchine created Serenade in 1934. It was his first piece created in the US, and was danced by students of the newly founded School of American Ballet.</li>
+<li>He only ever choreographed two pieces to Baroque music: Concerto Barocco, set to music by Johann Sebastian Bach, and Square Dance, set to music by Antonio Vivaldi and Arcangelo Corelli</li>
+<li>Balanchine reaches across eras in one special ballet, Jewels. The ballet, inspired by gems at Van Cleef and Arpels, includes three segments: Emeralds, Rubies and Diamonds, set to music by Fauré, Igor Stravinsky and Tchaikovsky respectively. The ballet is a homage of sorts to the countries that Balanchine called home throughout his life.</li>
+
+<p>Anyways, I'm not going to get too nerdy here. Here are some links. And go watch the New York City Ballet! </p>
+<li><a href="https://youtu.be/dw-LprEXHy0">NYCB video on George Balanchine</a></li>
+<li><a href="https://youtu.be/jKQdkwiYwBU">NYCB principal dancer Ashley Bouder on Serenade</a></li>
+<li><a href="https://www.youtube.com/watch?v=WZ1y9pSe7OM">A behind-the-scenes documentary of rehearsing Jewels at the Pacific Northwest Ballet</a></li>
+<li><a href="https://www.balanchine.com/">The George Balanchine Trust, where I got all of this information for the chart to begin with</a></li>
+
+<hr>
+<br>
+<p>And here's the original, interactive version. <a href="https://public.tableau.com/profile/ip5603#!/vizhome/GeorgeBalanchinesBallets/Balanchine">Click here to view it in a new tab.</a></p>
 <div class='tableauPlaceholder' id='viz1620607566774' style='position: relative;'><noscript><a href='#'><img alt='Balanchine ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;GeorgeBalanchinesBallets&#47;Balanchine&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GeorgeBalanchinesBallets&#47;Balanchine' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;GeorgeBalanchinesBallets&#47;Balanchine&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1620607566774');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.maxWidth='1080px';vizElement.style.height=(divElement.offsetWidth*0.6)+'px';vizElement.style.maxHeight='747px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.maxWidth='1080px';vizElement.style.height=(divElement.offsetWidth*1)+'px';vizElement.style.maxHeight='747px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-<p><a href="https://public.tableau.com/profile/ip5603#!/vizhome/GeorgeBalanchinesBallets/Balanchine">Click here to view the visualization in a new tab.</a></p>
 
 </article>
 </body>
@@ -28,7 +60,7 @@
 
 <div align="center" class="controls">
   <ul>
-    <li><a href="index.html" class="fa fa-lg fa-arrow-left"></a></li>
+    <li><a href="shoe-inflation.html" class="fa fa-lg fa-arrow-left"></a></li>
     <li><a href="index.html" class="fa fa-lg fa-home"></a></li>
     <li><a href="yagp.html" class="fa fa-lg fa-arrow-right"></a></li>
   </ul>
