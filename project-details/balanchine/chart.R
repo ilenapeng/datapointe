@@ -3,15 +3,20 @@ library(extrafont)
 
 df <- read_csv("~/Documents/github/balanchine/balanchine.csv")
 
-# reorder composer eras
-
-df$composer_era_factor <- factor(df$`Composer era`,
-                                 levels=unique(df_ordered$my_variable))
-
 plot <- df %>%
+#  # create column with individual colors for Tchaik and Stravinsky
+#  mutate(era_color = case_when(
+#    Composer == 'Peter Ilyitch Tschaikovsky' ~ 'Tchaikovsky',
+#    Composer == 'Igor Stravinsky' ~ 'Stravinsky',
+#    TRUE ~ `Composer era`
+#  )) %>%
+#  # relevel so the colors in scale_color_manual go in this order
+#  mutate(era_color = fct_relevel(era_color, c("Baroque", "Classical", "Romantic", "Tchaikovsky", "Modernist", "Neoclassical", "Stravinsky", "Impressionist", "Contemporary"))) %>%
+  # relevel so the x axis is in the right order
   mutate(composer_era_factor = fct_relevel(`Composer era`, c("Baroque", "Classical", "Romantic", "Modernist", "Neoclassical", "Impressionist", "Contemporary"))) %>%
+  # plot
   ggplot() + 
-  geom_hline(yintercept=1948, color="gray", size=0.5, linetype='dashed') + 
+  geom_hline(yintercept=1948, color="gray", linewidth=0.5, linetype='dashed') + 
   geom_point(aes(x=composer_era_factor, y=Year, size=Dancers, color=composer_era_factor, stroke=NA), alpha=0.7) +
   scale_y_continuous(trans ='reverse', breaks=seq(1928, 1982, by = 18)) +
   scale_size_continuous(range = c(0.5,8)) +
